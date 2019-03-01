@@ -47,7 +47,8 @@ class ItemModal extends Component {
     };
 
     render() {
-        return ( <div>
+        return ( 
+            <div>
             <Button color = "dark"
                 style = {
                     {
@@ -104,8 +105,4 @@ const mapStateToProps = state => ({
     item: state.item
 });
 
-export default connect(
-    mapStateToProps, {
-        addItem
-    }
-)(ItemModal);
+export default connect(mapStateToProps, {addItem})(ItemModal);
